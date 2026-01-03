@@ -34,8 +34,9 @@ nav a {
   text-decoration: none;
 }
 
-nav a:hover {
+nav a:hover, nav a.active {
   color: #00ff9c;
+  border-bottom: 2px solid #00ff9c;
 }
 
 /* HERO */
@@ -50,11 +51,6 @@ nav a:hover {
 /* SECTIONS */
 section {
   padding: 100px 20%;
-}
-
-h2 {
-  color: #00ff9c;
-  margin-bottom: 20px;
 }
 
 /* PROJECTS */
@@ -72,12 +68,6 @@ h2 {
 
 /* REVEAL */
 .reveal {
-  opacity: 0;
-  transform: translateY(50px);
-  transition: 0.8s ease;
-}
-
-.reveal.active {
   opacity: 1;
   transform: translateY(0);
 }
@@ -95,15 +85,8 @@ h2 {
   left: 0;
 }
 
-.glitch::before {
-  color: red;
-  animation: glitch 1s infinite;
-}
-
-.glitch::after {
-  color: blue;
-  animation: glitch 1.5s infinite;
-}
+.glitch::before { color: red; animation: glitch 1s infinite; }
+.glitch::after { color: blue; animation: glitch 1.5s infinite; }
 
 @keyframes glitch {
   0% { clip-path: inset(0 0 90% 0); }
