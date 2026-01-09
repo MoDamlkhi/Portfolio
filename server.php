@@ -17,3 +17,5 @@ if (!$name || !$email) {
 mail("your@email.com", "Portfolio Contact", $message, "From: $email");
 
 echo "Message received successfully";
+
+?>
