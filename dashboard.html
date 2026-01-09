@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <meta charset="UTF-8">
+  <title>SOC Dashboard | Mohammed Damlkhi</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+  <h1>SOC Dashboard</h1>
+  <p style="color:#22c55e;"><span class="status">● Monitoring Active</span></p>
+</header>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="projects.html">Projects</a>
+  <a href="dashboard.html">SOC Dashboard</a>
+  <a href="contact.html">Contact</a>
+</nav>
+
+<section>
+
+  <!-- Metrics -->
+  <div class="card">
+    <h2>📊 Security Overview</h2>
+    <p>Active Alerts: <strong style="color:#ef4444;">3</strong></p>
+    <p>Resolved Today: <strong style="color:#22c55e;">12</strong></p>
+    <p>Threat Level: <strong style="color:#facc15;">Medium</strong></p>
+  </div>
+
+  <!-- Alerts -->
+  <div class="card">
+    <h2>🚨 Active Alerts</h2>
+
+    <p>🔴 Suspicious Login Attempt<br>
+    <small>Source IP: 192.168.1.23</small></p>
+
+    <p>🟠 Possible SQL Injection<br>
+    <small>Endpoint: /login.php</small></p>
+
+    <p>🟡 Port Scan Detected<br>
+    <small>Source IP: 10.0.0.15</small></p>
+  </div>
+
+  <!-- Incident Log -->
+  <div class="card">
+    <h2>📜 Incident Log</h2>
+    <ul>
+      <li>[10:12] Brute force blocked (Firewall)</li>
+      <li>[09:47] Malware signature matched</li>
+      <li>[08:30] Suspicious PowerShell activity</li>
+    </ul>
+  </div>
+
+  <!-- Analyst Notes -->
+  <div class="card">
+    <h2>🧠 Analyst Notes</h2>
+    <p>
+      Observed multiple failed authentication attempts.
+      IP temporarily blocked. Monitoring for lateral movement.
+    </p>
+  </div>
+
+</section>
+
+</body>
+</html>

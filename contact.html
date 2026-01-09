@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mo | Portfolio</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+</head>
+
+<body>
+
+  <!-- NAVIGATION -->
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="projects.html">Projects</a>
+    <a href="certificates.html">Certificates</a>
+    <a href="contact.html">Contact</a>
+    <button class="toggle-btn" onclick="toggleTheme()">🌙</button>
+  </nav>
+  <section>
+  <div class="card">
+    <h2>Secure Contact Channel</h2>
+
+    <form id="contactForm">
+      <input type="text" name="name" placeholder="Name" required>
+      <input type="email" name="email" placeholder="Email" required>
+      <textarea name="message" placeholder="Message"></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+
+    <p id="response"></p>
+  </div>
+</section>
+
+<script src="js/main.js"></script>
+  
+</body>
+
+
+
+</html>
